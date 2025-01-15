@@ -3,38 +3,59 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f0f0f0;
+    color: #333; /* Ensure text color is dark enough for visibility */
 }
+
 header {
     background-color: #4CAF50;
     color: white;
     padding: 1rem;
     text-align: center;
 }
+
 nav ul {
     list-style-type: none;
     padding: 0;
 }
+
 nav ul li {
     display: inline;
     margin-right: 1rem;
 }
+
 nav ul li a {
     color: white;
     text-decoration: none;
 }
+
 main {
     padding: 2rem;
     background-color: white;
+    overflow: auto; /* Ensure main content area is scrollable */
 }
+
 section {
     margin-bottom: 2rem;
+    padding: 1rem;
+    border: 1px solid #ccc; /* Add border to distinguish sections */
 }
+
 footer {
     background-color: #333;
     color: white;
     text-align: center;
     padding: 1rem;
-    position: fixed;
+    position: relative;
     width: 100%;
-    bottom: 0;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    nav ul li {
+        display: block;
+        margin-bottom: 1rem;
+    }
+    header, main, footer {
+        padding: 1rem;
+    }
 }
