@@ -37,7 +37,7 @@ main {
 section {
     margin-bottom: 2rem;
     padding: 1rem;
-    border: 1px solid #ccc; /* Add border to distinguish sections */
+    border: 1px solid #ccc;
 }
 
 footer {
@@ -59,3 +59,9 @@ footer {
         padding: 1rem;
     }
 }
+@keyframes fadeInSlideDown {
+    from { opacity: 0; transform: translateY(-50px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+header h1 { animation: fadeInSlideDown 1s ease-out; }
+

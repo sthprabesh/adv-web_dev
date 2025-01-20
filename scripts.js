@@ -55,7 +55,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // Form validation and submission
+
     const form = document.getElementById('contactForm');
     form.addEventListener('submit', function(event) {
         event.preventDefault();
